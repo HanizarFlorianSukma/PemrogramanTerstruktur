@@ -19,7 +19,6 @@ def read_fname():
     except PermissionError:
         print("Data input is incomplete")
         
-    
 def main():
     print('\nHola, Wellcome Back!\n\n1. Check Filename\n2. Read Filename\n3. Exit\n')
     choice = input('=> ')
@@ -30,4 +29,5 @@ def main():
     else:
         print('Thanks/nSee You Next Time :)')
         exit()
+
 main()
