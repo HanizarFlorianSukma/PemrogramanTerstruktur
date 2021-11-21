@@ -10,7 +10,7 @@ def add_sayur():
         print('Data yang dimasukkan tidak diketahui')
         return add_sayur()
 def del_sayur():
-    sayur.remove(input('Sayur yang ingin di hapus : '))
+    sayur.remove(input('Sayur yang ingin di hapus : ').title())
 def btm():
     btm = input('Kembali ke menu [y/t] ? : ')
     if btm.lower() == 'y':
