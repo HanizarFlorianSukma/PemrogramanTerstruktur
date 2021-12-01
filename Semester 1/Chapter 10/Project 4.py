@@ -1,14 +1,24 @@
+# Membuka file dengan mode untuk di baca perbaris
+readFile = (open("d:/file2.txt", "r").readlines())
+
+# Input NIM yang akan di cari
 cari = input('Masukkan NIM yang mau dicari : ')
-file = open("d:/file2.txt", "r").readlines()
-dataList = []
-for i in range(len(file)):
-    data = file[i].rstrip("\n")
+
+# List untuk menyimpan semua dictionary
+dataMhs= []
+
+# Looping for 
+for i in range(len(readFile)):
+    data = readFile[i].rstrip("\n")
     pecahData = data.split("|")
     dataDict = {'nim':pecahData[0], 'nama':pecahData[1], 'alamat':pecahData[2]}
-    dataList.append(dataDict)
-for item in dataList:
+    dataMhs.append(dataDict)
+for item in dataMhs:
     if item['nim'] == cari:
         print(f"\nData Mahasiswa\n\nNIM\t: {item['nim']}\nNama\t: {item['nama']}\nAlamat\t: {item['alamat']}")
         break
 else:
-    print("Data mahasiswa tidak ditemukan.")
+    print("\nData mahasiswa tidak ditemukan.")
+
+# Menutup file
+file.close()
