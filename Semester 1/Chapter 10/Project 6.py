@@ -51,7 +51,8 @@ try:
 #   ==================================================================================================  #
    
     # Membuat file text
-    file = open("d:/enkripsi.txt", "a+")
+    file = open("d:/file6_enkripsi.txt", "a+")
+
 
     # Menuliskan teks sandi ke dalam file text yang sudah dibuat
     file.write(f'{teksSandi}')
