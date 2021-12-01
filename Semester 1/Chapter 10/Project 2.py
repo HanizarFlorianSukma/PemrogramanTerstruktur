@@ -11,7 +11,7 @@ while True:
     ulangi = input('\nUlangi input lagi [y/n] :')
     if ulangi.lower() not in 'y': break
 
-# Membaca file
+# Membaca sekaligus mencetak isi filenya
 print(f'\n{file.read()}')
 
 # Menutup file
