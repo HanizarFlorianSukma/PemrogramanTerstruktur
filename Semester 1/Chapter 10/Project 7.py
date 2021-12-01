@@ -1,3 +1,5 @@
+# Projcet 7
+
 try:
     filename = input("Path File  : ")
     teksSandi = open(filename, "r").read()
@@ -13,7 +15,7 @@ try:
         elif newValue < 65:
             newValue = 90 - (64-newValue)
         teksAsli += (chr(newValue))
-    file = open("d:dekripsi.txt", "a+")
+    file = open("d:/file7_dekripsi.txt", "a+")
     file.write(f'{teksAsli}')
     print(f'Teks Asli  : {teksAsli}')
     file.close()
