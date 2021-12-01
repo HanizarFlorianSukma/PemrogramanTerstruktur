@@ -16,7 +16,7 @@ intBil2 = list(map(int, bil2))
 # Looping for untuk menjumlahkan kedua item dari masing-masing list, seklaigus di tambhkan kedalam file text
 for (item1, item2) in zip(intBil1, intBil2):
     hasil = (item1+item2)
-    fil = open("d:jawabanFile5.txt", "a+")
+    fil = open("d:/file5_jawaban.txt", "a+")
     fil.write(f'{hasil}\n')
     print(item1+item2)
 
